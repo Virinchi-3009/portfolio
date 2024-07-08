@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background: #1565c0;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    position: relative;
+    border-radius: 0 120% 120% 0; /* Create semi-circle */
+    padding: 50px 20px 20px; /* Add padding to create space for profile picture */
+}
+
+.profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #f5f5f5;
+    margin-bottom: 20px; /* Add space below the profile picture */
+    position: absolute;
+    top: 50%; /* Adjust this value to position the profile picture vertically */
+    left:60%;
+    transform: translateY(-50%) translateX(-10px); /* Fine-tune horizontal position */
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; /* Align items to the start */
+    flex-grow: 1; /* Allow the nav to take up remaining space */
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start horizontally */
+    margin-top: 50px; /* Add space above the nav items */
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a img {
+    width: 30px;
+    height: 30px;
+}
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main-content h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.main-content h2 {
+    margin: 10px 0 20px;
+    font-size: 2rem;
+    color: #555;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a img {
+    width: 40px;
+    height: 40px;
+}
